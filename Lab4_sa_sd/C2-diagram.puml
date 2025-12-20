@@ -27,14 +27,14 @@ actor "Системный\nадминистратор" as SysAdmin
 rectangle "ISBS — Информационная система\nбиблиотечного сервиса" as ISBS {
 
   rectangle "Library Web App\n(React + Redux + TypeScript)" as WebApp
-  rectangle "Library Mobile App\n(Android, Kotlin)" as MobileApp
+  rectangle "Library Mobile App\n(Flutter)" as MobileApp
   rectangle "Library Desktop App\n(Compose Multiplatform Desktop, Kotlin)" as DesktopApp
 
   rectangle "Library API\n(Java + Spring REST)" as Api
 
   database "Library DB\n(PostgreSQL)" as Db
 
-  rectangle "Cache / Session Store\n(Redis)" as Redis
+  rectangle "Cache\n(Redis)" as Redis
   rectangle "Message Broker\n(RabbitMQ)" as Rabbit
   rectangle "Logging & Monitoring\n(ELK stack)" as Elk
 }
@@ -63,7 +63,7 @@ DesktopApp ..> Payment : Redirect/External browser\n(HTTPS)
 
 ' --- API -> internal infrastructure ---
 Api --> Db : JDBC/Hibernate\nчтение/запись данных
-Api --> Redis : Кэш + сессии/токены\n(blacklist, rate-limit)\nRedis protocol
+Api --> Redis : Кэш\n(blacklist, rate-limit)\nRedis protocol
 Api --> Rabbit : AMQP\nуведомления, события
 Api --> Elk : Logstash/HTTP\nтехлоги/метрики
 
