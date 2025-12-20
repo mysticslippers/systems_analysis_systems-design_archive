@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.12.11)  20 DEC 2025 19:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.12.11)  20 DEC 2025 20:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -997,48 +997,27 @@ Package pdftex.def Info: Lab4_sa_sd/C1-diagram.png  used on input line 1116.
 
 
 [17]
-
-LaTeX Warning: File `Lab4_sa_sd/C2-diagram.png' not found on input line 1127.
-
-
-! Package pdftex.def Error: File `Lab4_sa_sd/C2-diagram.png' not found: using d
-raft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1127 ...=1\textwidth]{Lab4_sa_sd/C2-diagram.png}
-                                                  
-? 
+<Lab4_sa_sd/C2-diagram.png, id=217, 1797.71625pt x 941.5175pt>
+File: Lab4_sa_sd/C2-diagram.png Graphic file (type png)
+<use Lab4_sa_sd/C2-diagram.png>
+Package pdftex.def Info: Lab4_sa_sd/C2-diagram.png  used on input line 1127.
+(pdftex.def)             Requested size: 523.24622pt x 274.03873pt.
 
 
 [18 <./Lab4_sa_sd/C1-diagram.png>]
-
-LaTeX Warning: File `Lab4_sa_sd/C3-diagram.png' not found on input line 1138.
-
-
-! Package pdftex.def Error: File `Lab4_sa_sd/C3-diagram.png' not found: using d
-raft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1138 ...=1\textwidth]{Lab4_sa_sd/C3-diagram.png}
-                                                  
-? 
-
-
-[19]
-<Lab4_sa_sd/C4-diagram.png, id=231, 1565.85pt x 1473.505pt>
+<Lab4_sa_sd/C3-diagram.png, id=226, 2061.7025pt x 670.505pt>
+File: Lab4_sa_sd/C3-diagram.png Graphic file (type png)
+<use Lab4_sa_sd/C3-diagram.png>
+Package pdftex.def Info: Lab4_sa_sd/C3-diagram.png  used on input line 1138.
+(pdftex.def)             Requested size: 523.24622pt x 170.16315pt.
+<Lab4_sa_sd/C4-diagram.png, id=227, 1565.85pt x 1473.505pt>
 File: Lab4_sa_sd/C4-diagram.png Graphic file (type png)
 <use Lab4_sa_sd/C4-diagram.png>
 Package pdftex.def Info: Lab4_sa_sd/C4-diagram.png  used on input line 1149.
 (pdftex.def)             Requested size: 523.24622pt x 492.39626pt.
 
 
-[20]
+[19 <./Lab4_sa_sd/C2-diagram.png> <./Lab4_sa_sd/C3-diagram.png>]
 <Lab4_sa_sd/Sequence Diagram.png, id=238, 1334.9875pt x 1832.8475pt>
 File: Lab4_sa_sd/Sequence Diagram.png Graphic file (type png)
 <use Lab4_sa_sd/Sequence Diagram.png>
@@ -1047,17 +1026,17 @@ Package pdftex.def Info: Lab4_sa_sd/Sequence Diagram.png  used on input line 11
 (pdftex.def)             Requested size: 366.27075pt x 502.84604pt.
 
 
-[21 <./Lab4_sa_sd/C4-diagram.png>]
+[20 <./Lab4_sa_sd/C4-diagram.png>]
 
-[22 <./Lab4_sa_sd/Sequence Diagram.png>]
+[21 <./Lab4_sa_sd/Sequence Diagram.png>]
+
+[22]
 
 [23]
 
 [24]
 
-[25]
-
-[26] (./Project_Report.aux)
+[25] (./Project_Report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1070,10 +1049,10 @@ Package rerunfilecheck Info: File `Project_Report.out' has not changed.
 (rerunfilecheck)             Checksum: C9E3ED9F1F1C01B040A6FC8CB7E55517;4143.
  ) 
 Here is how much of TeX's memory you used:
- 15994 strings out of 474142
- 247279 string characters out of 5742215
+ 15947 strings out of 474142
+ 245610 string characters out of 5742215
  858458 words of memory out of 5000000
- 38642 multiletter control sequences out of 15000+600000
+ 38596 multiletter control sequences out of 15000+600000
  575902 words of font info for 76 fonts, out of 8000000 for 9000
  735 hyphenation exceptions out of 8191
  75i,10n,79p,815b,595s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1088,10 +1067,10 @@ pk> </Users/admin/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/lh/lh-t2a
 /lati1440.600pk> </Users/admin/Library/texlive/2025basic/texmf-var/fonts/pk/ljf
 our/lh/lh-t2a/labx2488.600pk> </Users/admin/Library/texlive/2025basic/texmf-var
 /fonts/pk/ljfour/lh/lh-t2a/larm1440.600pk>
-Output written on Project_Report.pdf (27 pages, 1072183 bytes).
+Output written on Project_Report.pdf (26 pages, 1184362 bytes).
 PDF statistics:
- 746 PDF objects out of 1000 (max. 8388607)
- 310 compressed objects within 4 object streams
- 121 named destinations out of 1000 (max. 500000)
- 180 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 727 PDF objects out of 1000 (max. 8388607)
+ 306 compressed objects within 4 object streams
+ 120 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 

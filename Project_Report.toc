@@ -13,13 +13,13 @@
 \contentsline {subsubsection}{Диаграмма контекста (C1)}{17}{section*.6}%
 \contentsline {subsubsection}{Диаграмма контейнеров (C2)}{18}{section*.7}%
 \contentsline {subsubsection}{Диаграмма компонентов (C3)}{19}{section*.8}%
-\contentsline {subsubsection}{Диаграмма классов (C4)}{20}{section*.9}%
-\contentsline {subsubsection}{Диаграмма последовательностей}{21}{section*.10}%
-\contentsline {section}{\numberline {4}Нефункциональные требования}{23}{section.0.4}%
-\contentsline {subsection}{\numberline {4.1}Производительность}{23}{subsection.0.4.1}%
-\contentsline {subsection}{\numberline {4.2}Надёжность и доступность}{23}{subsection.0.4.2}%
-\contentsline {subsection}{\numberline {4.3}Безопасность}{23}{subsection.0.4.3}%
-\contentsline {subsection}{\numberline {4.4}Удобство использования (Usability)}{24}{subsection.0.4.4}%
-\contentsline {subsection}{\numberline {4.5}Масштабируемость}{24}{subsection.0.4.5}%
-\contentsline {subsection}{\numberline {4.6}Поддерживаемость}{25}{subsection.0.4.6}%
-\contentsline {section}{\numberline {5}Заключение}{26}{section.0.5}%
+\contentsline {subsubsection}{Диаграмма классов (C4)}{19}{section*.9}%
+\contentsline {subsubsection}{Диаграмма последовательностей}{20}{section*.10}%
+\contentsline {section}{\numberline {4}Нефункциональные требования}{22}{section.0.4}%
+\contentsline {subsection}{\numberline {4.1}Производительность}{22}{subsection.0.4.1}%
+\contentsline {subsection}{\numberline {4.2}Надёжность и доступность}{22}{subsection.0.4.2}%
+\contentsline {subsection}{\numberline {4.3}Безопасность}{22}{subsection.0.4.3}%
+\contentsline {subsection}{\numberline {4.4}Удобство использования (Usability)}{23}{subsection.0.4.4}%
+\contentsline {subsection}{\numberline {4.5}Масштабируемость}{23}{subsection.0.4.5}%
+\contentsline {subsection}{\numberline {4.6}Поддерживаемость}{24}{subsection.0.4.6}%
+\contentsline {section}{\numberline {5}Заключение}{25}{section.0.5}%

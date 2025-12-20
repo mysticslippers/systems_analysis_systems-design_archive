@@ -91,21 +91,22 @@
 	\footnotesize
 	Диаграмма контейнеров показывает высокоуровневую архитектуру системы, включая основные приложения, базы данных и внешние системы.
 	
-	\vspace{0.1cm}
+	\vspace{0.05cm}
 	
-	\textbf{Технологический стек:}
+	\textbf{Клиентские приложения:}
+	\begin{itemize}
+		\setlength{\itemsep}{0pt}
+		\setlength{\parskip}{0pt}
+		\item \textbf{Library Web App} (React, Redux, TypeScript) --- веб-интерфейс для читателей и библиотекарей, компонентный подход, типобезопасность
+		\item \textbf{Library Mobile App} (Flutter) --- мобильное приложение, кроссплатформенность (iOS/Android), единая кодовая база
+		\item \textbf{Library Desktop App} (Compose Multiplatform Desktop, Kotlin) --- нативное десктопное приложение, современный UI, производительность
+	\end{itemize}
+	
+	\vspace{0.05cm}
+	
+	\textbf{Backend и инфраструктура:}
 	\begin{columns}
 		\column{0.5\textwidth}
-		\textbf{Frontend:} React + Redux + TypeScript
-		\begin{itemize}
-			\setlength{\itemsep}{0pt}
-			\setlength{\parskip}{0pt}
-			\item Компонентный подход, типобезопасность
-			\item Большое сообщество, богатая экосистема
-		\end{itemize}
-		
-		\vspace{0.05cm}
-		
 		\textbf{Backend:} Java + Spring REST
 		\begin{itemize}
 			\setlength{\itemsep}{0pt}
@@ -129,7 +130,7 @@
 		\begin{itemize}
 			\setlength{\itemsep}{0pt}
 			\setlength{\parskip}{0pt}
-			\item \textbf{Redis} --- быстрый кэш запросов
+			\item \textbf{Redis} --- быстрый кэш, rate-limiting
 			\item \textbf{RabbitMQ} --- асинхронная обработка уведомлений
 			\item \textbf{ELK stack} --- централизованное логирование
 		\end{itemize}
@@ -145,7 +146,7 @@
 		\end{itemize}
 	\end{columns}
 	
-	\vspace{0.1cm}
+	\vspace{0.05cm}
 	
 	\begin{center}
 		\tiny

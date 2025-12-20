@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.12.11)  12 DEC 2025 03:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.12.11)  20 DEC 2025 20:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1257,11 +1257,11 @@ Overfull \hbox (177.15862pt too wide) in paragraph at lines 87--87
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
-<Lab4_sa_sd/C2-diagram.png, id=150, 1118.1775pt x 630.355pt>
+<Lab4_sa_sd/C2-diagram.png, id=150, 1797.71625pt x 941.5175pt>
 File: Lab4_sa_sd/C2-diagram.png Graphic file (type png)
 <use Lab4_sa_sd/C2-diagram.png>
 Package pdftex.def Info: Lab4_sa_sd/C2-diagram.png  used on input line 87.
-(pdftex.def)             Requested size: 302.2197pt x 170.37125pt.
+(pdftex.def)             Requested size: 302.2197pt x 158.27443pt.
 
 
 
@@ -1272,8 +1272,12 @@ Overfull \hbox (177.15862pt too wide) has occurred while \output is active
 [5
 
  <./Lab4_sa_sd/C2-diagram.png>]
-Overfull \hbox (177.15862pt too wide) in paragraph at lines 154--154
+Overfull \hbox (177.15862pt too wide) in paragraph at lines 155--155
  [][]  \T2A/cmss/m/n/6 ([])  
+ []
+
+
+Overfull \vbox (65.19942pt too high) detected at line 155
  []
 
 
@@ -1286,17 +1290,17 @@ Overfull \hbox (177.15862pt too wide) has occurred while \output is active
 [6
 
 ]
-Overfull \hbox (177.15862pt too wide) in paragraph at lines 161--161
+Overfull \hbox (177.15862pt too wide) in paragraph at lines 162--162
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 <Lab3_sa_sd/Lab3_sa_sd.png, id=208, 1705.37125pt x 2524.43124pt>
 File: Lab3_sa_sd/Lab3_sa_sd.png Graphic file (type png)
 <use Lab3_sa_sd/Lab3_sa_sd.png>
-Package pdftex.def Info: Lab3_sa_sd/Lab3_sa_sd.png  used on input line 161.
+Package pdftex.def Info: Lab3_sa_sd/Lab3_sa_sd.png  used on input line 162.
 (pdftex.def)             Requested size: 366.9853pt x 543.2429pt.
 
-Overfull \vbox (342.57465pt too high) detected at line 161
+Overfull \vbox (342.57465pt too high) detected at line 162
  []
 
 
@@ -1309,7 +1313,7 @@ Overfull \hbox (177.15862pt too wide) has occurred while \output is active
 [7
 
  <./Lab3_sa_sd/Lab3_sa_sd.png>]
-Overfull \hbox (177.15862pt too wide) in paragraph at lines 186--186
+Overfull \hbox (177.15862pt too wide) in paragraph at lines 187--187
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
@@ -1323,12 +1327,12 @@ Overfull \hbox (177.15862pt too wide) has occurred while \output is active
 [8
 
 ]
-Overfull \hbox (177.15862pt too wide) in paragraph at lines 220--220
+Overfull \hbox (177.15862pt too wide) in paragraph at lines 221--221
  [][]  \T2A/cmss/m/n/6 ([])  
  []
 
 
-Overfull \vbox (4.9588pt too high) detected at line 220
+Overfull \vbox (4.9588pt too high) detected at line 221
  []
 
 
@@ -1361,7 +1365,7 @@ Package rerunfilecheck Info: File `Presentation.out' has not changed.
 Here is how much of TeX's memory you used:
  23734 strings out of 474142
  456805 string characters out of 5742215
- 825934 words of memory out of 5000000
+ 827935 words of memory out of 5000000
  46269 multiletter control sequences out of 15000+600000
  583159 words of font info for 86 fonts, out of 8000000 for 9000
  735 hyphenation exceptions out of 8191
@@ -1377,9 +1381,9 @@ in/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/lh/lh-t2a/lass0600.600pk
 ass0800.600pk> </Users/admin/Library/texlive/2025basic/texmf-var/fonts/pk/ljfou
 r/lh/lh-t2a/lass1200.600pk> </Users/admin/Library/texlive/2025basic/texmf-var/f
 onts/pk/ljfour/lh/lh-t2a/lass1728.600pk>
-Output written on Presentation.pdf (9 pages, 614673 bytes).
+Output written on Presentation.pdf (9 pages, 671151 bytes).
 PDF statistics:
- 732 PDF objects out of 1000 (max. 8388607)
+ 742 PDF objects out of 1000 (max. 8388607)
  284 compressed objects within 3 object streams
  19 named destinations out of 1000 (max. 500000)
  100 words of extra memory for PDF output out of 10000 (max. 10000000)
