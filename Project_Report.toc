@@ -1,0 +1,25 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{\numberline {1}Введение}{2}{section.0.1}%
+\contentsline {section}{\numberline {2}Бизнес-требования}{3}{section.0.2}%
+\contentsline {section}{\numberline {3}Анализ и проектирование}{4}{section.0.3}%
+\contentsline {subsection}{\numberline {3.1}Итерация 1: Карта стейкхолдеров и план выявления требований}{4}{subsection.0.3.1}%
+\contentsline {subsubsection}{Карта стейкхолдеров}{4}{section*.2}%
+\contentsline {subsubsection}{План выявления требований}{4}{section*.3}%
+\contentsline {subsection}{\numberline {3.2}Итерация 2: BPMN-диаграмма ключевого процесса}{6}{subsection.0.3.2}%
+\contentsline {subsection}{\numberline {3.3}Итерация 3: Use Case Diagram и детализация прецедентов}{7}{subsection.0.3.3}%
+\contentsline {subsubsection}{Прецедент 5: Возврат материала}{14}{section*.4}%
+\contentsline {subsubsection}{Прецедент 6: Погашение штрафа}{15}{section*.5}%
+\contentsline {subsection}{\numberline {3.4}Итерация 4: Диаграммы архитектуры, классов и последовательностей}{17}{subsection.0.3.4}%
+\contentsline {subsubsection}{Диаграмма контекста (C1)}{17}{section*.6}%
+\contentsline {subsubsection}{Диаграмма контейнеров (C2)}{18}{section*.7}%
+\contentsline {subsubsection}{Диаграмма компонентов (C3)}{19}{section*.8}%
+\contentsline {subsubsection}{Диаграмма классов (C4)}{20}{section*.9}%
+\contentsline {subsubsection}{Диаграмма последовательностей}{21}{section*.10}%
+\contentsline {section}{\numberline {4}Нефункциональные требования}{23}{section.0.4}%
+\contentsline {subsection}{\numberline {4.1}Производительность}{23}{subsection.0.4.1}%
+\contentsline {subsection}{\numberline {4.2}Надёжность и доступность}{23}{subsection.0.4.2}%
+\contentsline {subsection}{\numberline {4.3}Безопасность}{23}{subsection.0.4.3}%
+\contentsline {subsection}{\numberline {4.4}Удобство использования (Usability)}{24}{subsection.0.4.4}%
+\contentsline {subsection}{\numberline {4.5}Масштабируемость}{24}{subsection.0.4.5}%
+\contentsline {subsection}{\numberline {4.6}Поддерживаемость}{25}{subsection.0.4.6}%
+\contentsline {section}{\numberline {5}Заключение}{26}{section.0.5}%

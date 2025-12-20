@@ -1,0 +1,1304 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+Министерство науки и высшего образования Российской Федерации
+
+Федеральное государственное автономное образовательное учреждение
+высшего образования~
+
+«\textbf{Национальный исследовательский университет ИТМО}»
+
+Факультет Программной инженерии и компьютерной техники
+
+Проектная работа
+
+по дисциплине «Системный анализ и системное проектирование»
+
+Итерация №3
+
+\textbf{Преподаватель:}\\
+Маркина Татьяна Анатольевна
+
+\textbf{Выполнили:}
+
+Михайлов Дмитрий Андреевич
+
+Малышев Никита Александрович
+
+\textbf{Группа:} Р3306, P3312
+
+Санкт-Петербург, 2025
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Диаграммы вариантов использования}
+\end{enumerate}
+
+\includegraphics[width=6.49653in,height=9.29167in]{vertopal_27f27a2e612a46b1b3bba89b2cb54970/media/image1.png}
+
+Рис. 1: Use Case-диаграмма для библиотечного сервиса.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  \textbf{Прецеденты}
+\end{enumerate}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1920}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1996}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.6084}}@{}}
+\toprule()
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\begin{minipage}[b]{\linewidth}\raggedright
+Авторизация (регистрация и активация учётной записи)
+\end{minipage}} \\
+\midrule()
+\endhead
+\textbf{Описание} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Определить, какие ресурсы и действия доступны конкретному пользователю в
+рамках системы, на основе его учётной записи, ролей и прав.} \\
+\textbf{Предусловия} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Пользователь не авторизован.
+\item
+  Система доступна для авторизации и регистрации новых пользователей.
+\end{enumerate}
+\end{minipage}} \\
+\textbf{Акторы (Участники)} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Неавторизованный пользователь, Система} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Основной сценарий}} \\
+\textbf{№ шага} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+\textbf{Действие}} \\
+1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Неавторизованный пользователь инициирует процесс регистрации в
+системе.} \\
+2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Система запрашивает у неавторизованного пользователя регистрационные
+данные (ФИО, электронный адрес, пароль, подтверждение пароля).} \\
+3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Неавторизованный пользователь вводит запрошенные регистрационные
+данные.} \\
+4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Неавторизованный пользователь отправляет введённые регистрационные
+данные на обработку.} \\
+5 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Система проверяет корректность введённых регистрационных данных.} \\
+6 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Система проверяет уникальность указанного электронного адреса
+пользователя.} \\
+7 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Система создаёт учётную запись пользователя в состоянии «ожидает
+подтверждения».} \\
+8 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Система формирует запрос на подтверждение регистрации и направляет его
+пользователю (например, по электронной почте).} \\
+9 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Пользователь подтверждает регистрацию в системе в ответ на запрос.} \\
+10 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Система активирует учётную запись пользователя.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Альтернативный сценарий: Несовпадающие пароли (шаг №5)}} \\
+5.А.1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Система определяет, что значения пароля и подтверждения пароля не
+совпадают.} \\
+5.А.2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Система информирует неавторизованного пользователя о несоответствии
+паролей.} \\
+5.А.3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Система запрашивает повторный ввод пароля и его подтверждения.} \\
+5.А.4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Неавторизованный пользователь вводит новый пароль и его
+подтверждение.} \\
+5.А.5 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Неавторизованный пользователь повторно отправляет регистрационные данные
+на обработку.} \\
+5.А.6 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Система возвращается к шагу 5 основного сценария.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Альтернативный сценарий: Электронный адрес уже зарегистрирован
+(шаг №6)}} \\
+6.B.1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Система определяет, что указанная электронная почта уже зарегистрирована
+в системе.} \\
+6.B.2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Система информирует неавторизованного пользователя о том, что учётная
+запись с таким электронным адресом уже существует.} \\
+6.B.3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Система предлагает неавторизованному пользователю перейти к процедуре
+входа в существующую учётную запись.} \\
+6.B.4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Неавторизованный пользователь может инициировать процесс авторизации
+(входа) вместо регистрации. Альтернативный сценарий завершается без
+возврата к основному сценарию.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Альтернативный сценарий: Регистрация не подтверждена (шаг
+№8)}} \\
+8.C.1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Система удерживает учётную запись пользователя в состоянии «неактивна»
+до истечения установленного срока.} \\
+8.C.2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+По истечении установленного срока система удаляет неактивную учётную
+запись пользователя.} \\
+8.C.3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Система информирует пользователя о невозможности использования
+неактивированной учётной записи при повторной попытке регистрации или
+авторизации.} \\
+8.C.4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Альтернативный сценарий завершается без возврата к основному
+сценарию.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Исключения (Ошибки, отсутствие данных для отображения)}} \\
+E1 & Ошибка отправки e-mail. &
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Система фиксирует ошибку при отправке запроса на подтверждение
+  регистрации.
+\item
+  Система уведомляет пользователя о невозможности отправки запроса на
+  подтверждение регистрации.
+\item
+  Система предлагает пользователю повторить отправку запроса на
+  подтверждение регистрации позже.
+\end{enumerate}
+\end{minipage} \\
+E2 & Ошибка записи в базу данных. &
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Система фиксирует ошибку записи учётной записи в базу данных.
+\item
+  Система отклоняет регистрацию.
+\item
+  Система выводит пользователю сообщение о технической ошибке и
+  предлагает повторить попытку позднее.
+\end{enumerate}
+\end{minipage} \\
+\textbf{Постусловия} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8080} + 2\tabcolsep}@{}}{%
+Учётная запись пользователя создана и активирована ИЛИ Регистрация не
+завершена, и учётная запись удалена/не создана.} \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1964}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3647}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4389}}@{}}
+\toprule()
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\begin{minipage}[b]{\linewidth}\raggedright
+Поиск материалов
+\end{minipage}} \\
+\midrule()
+\endhead
+\textbf{Описание} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Поиск и просмотр информации о книгах и других материалах в каталоге
+библиотеки.} \\
+\textbf{Предусловия} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Пользователь имеет доступ к каталогу (гость или авторизованный).
+\item
+  Каталог доступен для выполнения поисковых операций.
+\end{enumerate}
+\end{minipage}} \\
+\textbf{Акторы (Участники)} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Пользователь, Система} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Основной сценарий}} \\
+\textbf{№ шага} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+\textbf{Действие}} \\
+1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Пользователь инициирует поиск материалов в каталоге.} \\
+2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Пользователь вводит ключевые характеристики искомых материалов
+(например, название, автора, идентификатор).} \\
+3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Пользователь отправляет запрос на поиск материалов.} \\
+4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Система выполняет поиск материалов по указанным критериям.} \\
+5 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Система формирует список найденных материалов.} \\
+6 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Система отображает пользователю список найденных материалов.} \\
+7 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Пользователь задаёт дополнительные параметры отбора материалов
+(фильтрацию, сортировку).} \\
+8 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Пользователь применяет выбранные параметры отбора.} \\
+9 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Система пересчитывает результаты с учётом указанных параметров
+отбора.} \\
+10 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Система отображает обновлённый список найденных материалов.} \\
+11 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Пользователь запрашивает детальную информацию по выбранному
+материалу.} \\
+12 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Система отображает пользователю детальную информацию о выбранном
+материале.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Альтернативный сценарий: Поиск без указания критериев (шаг
+№2)}} \\
+2.А.1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Пользователь не вводит критерии поиска и отправляет запрос.} \\
+2.А.2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Система определяет отсутствие критериев поиска.} \\
+2.А.3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Система информирует пользователя об отсутствии введённых критериев.} \\
+2.А.4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Система предлагает пользователю список популярных или рекомендованных
+материалов.} \\
+2.А.5 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{itemize}
+\item
+  Пользователь выбирает материал из предложенного списка ИЛИ
+\item
+  Пользователь возвращается к вводу критериев поиска (возврат к шагу 2
+  основного сценария).
+\end{itemize}
+\end{minipage}} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Альтернативный сценарий: Результаты поиска отсутствуют (шаг
+№6)}} \\
+6.B.1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Система не находит материалов, соответствующих заданным критериям.} \\
+6.B.2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Система информирует пользователя об отсутствии результатов поиска.} \\
+6.B.3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Система предлагает пользователю изменить или уточнить критерии
+поиска.} \\
+6.B.4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Пользователь изменяет или уточняет критерии поиска.} \\
+6.B.5 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Пользователь повторно отправляет запрос на поиск.} \\
+6.B.6 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Система возвращается к шагу 4 основного сценария.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Альтернативный сценарий: Некорректное сочетание параметров
+отбора (шаг №9)}} \\
+9.C.1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Система определяет, что заданные параметры отбора не могут быть
+корректно применены.} \\
+9.C.2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Система информирует пользователя о некорректности сочетания параметров
+отбора.} \\
+9.C.3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Система предлагает пользователю изменить параметры отбора.} \\
+9.C.4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Пользователь изменяет параметры отбора.} \\
+9.C.5 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Пользователь повторно применяет параметры отбора.} \\
+9.C.6 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Система возвращается к шагу 9 основного сценария.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Исключения (Ошибки, отсутствие данных для отображения)}} \\
+E1 & Ошибка связи с базой данных. & Поиск временно недоступен. \\
+E2 & Превышено время ожидания. & Система предлагает повторить запрос. \\
+\textbf{Постусловия} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8036} + 2\tabcolsep}@{}}{%
+Отображены найденные результаты ИЛИ сообщение об их отсутствии.} \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2162}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3884}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3954}}@{}}
+\toprule()
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\begin{minipage}[b]{\linewidth}\raggedright
+Оформление брони
+\end{minipage}} \\
+\midrule()
+\endhead
+\textbf{Описание} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Пользователь резервирует материал для последующего получения в
+библиотеке.} \\
+\textbf{Предусловия} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Пользователь авторизован.
+\item
+  Материал доступен для бронирования (существуют экземпляры, подлежащие
+  бронированию).
+\end{enumerate}
+\end{minipage}} \\
+\textbf{Акторы (Участники)} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Пользователь, Система, Библиотекарь} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Основной сценарий}} \\
+\textbf{№ шага} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+\textbf{Действие}} \\
+1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Пользователь выбирает в каталоге материал, который требуется
+забронировать.} \\
+2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Пользователь инициирует бронирование выбранного материала.} \\
+3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Система проверяет статус экземпляров выбранного материала (доступен,
+выдан, забронирован).} \\
+4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Система проверяет ограничения на бронирование для пользователя
+(например, лимит активных броней).} \\
+5 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+При отсутствии ограничений система создаёт запись бронирования материала
+за пользователем.} \\
+6 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Система формирует и направляет библиотекарю уведомление о новой
+брони.} \\
+7 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Система формирует и направляет пользователю уведомление об успешном
+создании брони.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Альтернативный сценарий: Материал уже забронирован (шаг №3)}} \\
+3.А.1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Система определяет, что экземпляры выбранного материала уже
+забронированы другими пользователями.} \\
+3.А.2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Система информирует пользователя о недоступности немедленного
+бронирования.} \\
+3.А.3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Система предлагает пользователю включение в очередь ожидания на данный
+материал.} \\
+3.А.4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Пользователь принимает решение встать в очередь ожидания.} \\
+3.А.5 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Система создаёт запись о включении пользователя в очередь ожидания.} \\
+3.А.6 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Альтернативный сценарий завершается без продолжения основного
+сценария.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Альтернативный сценарий: Превышен лимит бронирований (шаг
+№4)}} \\
+4.B.1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Система определяет, что пользователь превысил допустимый лимит активных
+бронирований.} \\
+4.B.2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Система информирует пользователя о невозможности создания новой брони
+из-за превышения лимита.} \\
+4.B.3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Альтернативный сценарий завершается без продолжения основного
+сценария.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Альтернативный сценарий: Отмена бронирования до подтверждения
+библиотекарем (шаг №5)}} \\
+5.C.1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Пользователь инициирует отмену ранее созданной брони.} \\
+5.C.2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Система удаляет запись о бронировании материалов за пользователем.} \\
+5.C.3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Система формирует и направляет библиотекарю уведомление об отмене
+брони.} \\
+5.C.4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Система формирует и направляет пользователю уведомление об успешной
+отмене брони.} \\
+5.C.5 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Альтернативный сценарий завершается без возврата к основному
+сценарию.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Исключения (Ошибки, отсутствие данных для отображения)}} \\
+E1 & Ошибка записи в базу данных. & Бронь не создана. \\
+E2 & Потеря соединения с сервером при бронировании. & Пользователь
+уведомляется, и операция отменяется. \\
+\textbf{Постусловия} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7838} + 2\tabcolsep}@{}}{%
+Создана активная бронь или поставлена очередь на материал.} \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2027}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4888}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3085}}@{}}
+\toprule()
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\begin{minipage}[b]{\linewidth}\raggedright
+Оформление выдачи материала
+\end{minipage}} \\
+\midrule()
+\endhead
+\textbf{Описание} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+Библиотекарь оформляет выдачу материала пользователю.} \\
+\textbf{Предусловия} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Пользователь зарегистрирован в системе.
+\item
+  У пользователя отсутствуют блокирующие ограничения (например, активные
+  штрафы, критические просрочки).
+\item
+  Материал доступен для выдачи.
+\end{enumerate}
+\end{minipage}} \\
+\textbf{Акторы (Участники)} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+Пользователь, Система, Библиотекарь} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Основной сценарий}} \\
+\textbf{№ шага} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+\textbf{Действие}} \\
+1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+Библиотекарь идентифицирует пользователя в системе.} \\
+2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+Библиотекарь выбирает материал, подлежащий выдаче пользователю.} \\
+3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+Система проверяет доступность выбранного экземпляра материала.} \\
+4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+Система проверяет наличие у пользователя ограничений на выдачу (активные
+штрафы, просроченные материалы и др.).} \\
+5 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+При отсутствии ограничений система регистрирует выдачу материала
+пользователю с указанием срока возврата и места выдачи.} \\
+6 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+Система формирует и направляет пользователю уведомление о выданном
+материале и установленном сроке возврата.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Альтернативный сценарий: У пользователя есть просроченные
+материалы (шаг №4)}} \\
+4.А.1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+Система обнаруживает у пользователя просроченные материалы.} \\
+4.А.2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+Система блокирует операцию выдачи нового материала.} \\
+4.А.3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+Система информирует библиотекаря и пользователя о причине блокировки
+выдачи.} \\
+4.А.4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+Альтернативный сценарий завершается без продолжения основного
+сценария.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Альтернативный сценарий: Материал зарезервирован другим
+пользователем (шаг №3)}} \\
+3.B.1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+Система определяет, что выбранный материал зарезервирован другим
+пользователем.} \\
+3.B.2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+Система запрещает выдачу материала текущему пользователю.} \\
+3.B.3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+Система информирует библиотекаря и пользователя о невозможности выдачи
+материала.} \\
+3.B.4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+Альтернативный сценарий завершается без продолжения основного
+сценария.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Альтернативный сценарий: Изменение срока выдачи библиотекарем
+(шаг №5)}} \\
+5.C.1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+Библиотекарь принимает решение изменить срок выдачи материала
+пользователю в соответствии с внутренними правилами библиотеки.} \\
+5.C.2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+Библиотекарь задаёт новый срок возврата материала.} \\
+5.C.3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+Система обновляет срок возврата материала в записи выдачи.} \\
+5.C.4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+Система при необходимости формирует и направляет пользователю актуальное
+уведомление о сроке возврата.} \\
+5.C.5 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+Альтернативный сценарий завершается без возврата к основному
+сценарию.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Исключения (Ошибки, отсутствие данных для отображения)}} \\
+E1 & Сбой записи в базу данных при создании выдачи. & Выдача не
+создана. \\
+E2 & Ошибка синхронизации с удалённым филиалом. & Выдача не
+подтверждена. \\
+\textbf{Постусловия} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7973} + 2\tabcolsep}@{}}{%
+Материал числится как выданный пользователю.} \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1917}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3833}}@{}}
+\toprule()
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\begin{minipage}[b]{\linewidth}\raggedright
+Возврат материала
+\end{minipage}} \\
+\midrule()
+\endhead
+\textbf{Описание} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Пользователь возвращает материал, библиотекарь регистрирует возврат в
+системе.} \\
+\textbf{Предусловия} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Материал числится за пользователем как выданный.
+\item
+  Пользователь обращается в библиотеку для возврата материала.
+\end{enumerate}
+\end{minipage}} \\
+\textbf{Акторы (Участники)} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Пользователь, Система, Библиотекарь} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Основной сценарий}} \\
+\textbf{№ шага} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+\textbf{Действие}} \\
+1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Библиотекарь находит в системе запись о выдаче возвращаемого материала
+конкретному пользователю.} \\
+2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Библиотекарь регистрирует факт возврата материала в системе.} \\
+3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Система определяет фактическую дату возврата материала.} \\
+4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Система сравнивает фактическую дату возврата с установленным сроком
+возврата.} \\
+5 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+При отсутствии просрочки система изменяет статус материала на
+«доступен».} \\
+6 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+При наличии просрочки система рассчитывает размер штрафа в соответствии
+с действующими тарифами.} \\
+7 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Система формирует и направляет пользователю уведомление о результатах
+возврата материала.} \\
+8 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+При наличии рассчитанного штрафа система формирует и направляет
+пользователю уведомление о начисленном штрафе.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Альтернативный сценарий: Возврат повреждённого материала (шаг
+№2)}} \\
+2.А.1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Библиотекарь при приёме материала обнаруживает повреждение
+экземпляра.} \\
+2.А.2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Библиотекарь фиксирует состояние повреждённого экземпляра в системе.} \\
+2.А.3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Библиотекарь инициирует создание акта о повреждении материала.} \\
+2.А.4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Система сохраняет сведения об акте повреждения материала.} \\
+2.А.5 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+При необходимости система инициирует процедуру расчёта компенсации или
+иного вида ответственности в соответствии с правилами библиотеки.} \\
+2.А.6 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+После фиксации повреждения возврат материала продолжает обрабатываться
+по основному сценарию с шага 3 ИЛИ переходит к отдельной процедуре
+урегулирования (в зависимости от принятых правил).} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Альтернативный сценарий: Досрочный возврат материала (шаг
+№4)}} \\
+4.B.1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Пользователь возвращает материал до наступления срока возврата.} \\
+4.B.2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Система фиксирует отсутствие просрочки при выполнении сравнения дат
+возврата.} \\
+4.B.3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Система пропускает расчёт штрафа и изменяет статус материала на
+«доступен».} \\
+4.B.4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Альтернативный сценарий завершается продолжением основного сценария с
+шага 7.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Альтернативный сценарий: Малая просрочка и отмена штрафа (шаг
+№6)}} \\
+6.C.1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Система определяет, что просрочка возврата материала не превышает
+установленный порог (например, одни сутки).} \\
+6.C.2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Система рассчитывает штраф в соответствии с тарифами.} \\
+6.C.3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Библиотекарь принимает решение отменить начисленный штраф при малой
+просрочке.} \\
+6.C.4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Библиотекарь инициирует в системе отмену рассчитанного штрафа.} \\
+6.C.5 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Система отменяет начисленный штраф и сохраняет соответствующую
+запись.} \\
+6.C.6 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Система формирует и направляет пользователю уведомление об отмене
+штрафа.} \\
+6.C.7 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Альтернативный сценарий завершается без возврата к основному
+сценарию.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Исключения (Ошибки, отсутствие данных для отображения)}} \\
+E1 & Ошибка обновления статуса материала. & Статус материала не
+обновлён. \\
+E2 & Ошибка расчёта штрафа из-за отсутствия данных о тарифе. &
+Отсутствует данные о тарифе для расчёта штрафа. \\
+\textbf{Постусловия} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8083} + 2\tabcolsep}@{}}{%
+Материал возвращён и снова доступен. При необходимости начислен
+штраф.} \\
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2071}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3393}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4536}}@{}}
+\toprule()
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\begin{minipage}[b]{\linewidth}\raggedright
+Погашение штрафа
+\end{minipage}} \\
+\midrule()
+\endhead
+\textbf{Описание} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Пользователь оплачивает начисленный штраф через платёжный сервис.} \\
+\textbf{Предусловия} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Пользователь авторизован.
+\item
+  В системе существует хотя бы один активный штраф, начисленный
+  пользователю.
+\end{enumerate}
+\end{minipage}} \\
+\textbf{Акторы (Участники)} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Пользователь, Система} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Основной сценарий}} \\
+\textbf{№ шага} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+\textbf{Действие}} \\
+1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Пользователь запрашивает в системе список своих активных штрафов.} \\
+2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Система формирует список активных штрафов пользователя.} \\
+3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Система отображает пользователю список активных штрафов.} \\
+4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Пользователь выбирает штраф для оплаты.} \\
+5 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Пользователь инициирует оплату выбранного штрафа.} \\
+6 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Система передаёт параметры выбранного штрафа в платёжный сервис и
+передаёт ему управление для проведения операции.} \\
+7 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Пользователь вводит платёжные реквизиты в платёжном сервисе.} \\
+8 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Пользователь подтверждает выполнение платежа.} \\
+9 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Платёжный сервис обрабатывает платёж.} \\
+10 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Платёжный сервис формирует результат обработки платежа.} \\
+11 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Платёжный сервис передаёт результат обработки платежа в систему.} \\
+12 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+При успешной оплате система обновляет статус штрафа на «оплачен».} \\
+13 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Система формирует и направляет пользователю уведомление об успешной
+оплате штрафа.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Альтернативный сценарий: Отмена оплаты пользователем (шаг
+№8)}} \\
+8.А.1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Пользователь отменяет подтверждение платежа в платёжном сервисе.} \\
+8.А.2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Платёжный сервис прекращает обработку операции оплаты.} \\
+8.А.3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Платёжный сервис передаёт в систему информацию об отменённой
+операции.} \\
+8.А.4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Система сохраняет исходный статус штрафа как «не оплачен».} \\
+8.А.5 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Система возвращает пользователя к просмотру списка активных штрафов
+(аналог состояния после шага 3 основного сценария).} \\
+8.А.6 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Альтернативный сценарий завершается продолжением основного сценария с
+шага 3.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Альтернативный сценарий: Платёж отклонён банком (шаг
+№9--11)}} \\
+9.B.1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Платёжный сервис получает от банка отказ в проведении операции
+оплаты.} \\
+9.B.2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Платёжный сервис формирует информацию о неуспешной операции.} \\
+9.B.3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Платёжный сервис передаёт в систему информацию об отказе в проведении
+платежа.} \\
+9.B.4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Система сохраняет статус штрафа как «не оплачен».} \\
+9.B.5 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Система информирует пользователя о том, что платёж отклонён.} \\
+9.B.6 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Система предлагает пользователю повторить попытку оплаты штрафа.} \\
+9.B.7 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Альтернативный сценарий завершается, пользователь при желании может
+повторно инициировать основной сценарий.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Альтернативный сценарий: Задержка подтверждения от платёжного
+сервиса (шаг №8)}} \\
+8.C.1 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Система фиксирует отсутствие результата от платёжного сервиса в
+установленный интервал времени.} \\
+8.C.2 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Система устанавливает для штрафа промежуточный статус (например,
+«ожидает подтверждения оплаты»).} \\
+8.C.3 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Система продолжает периодически запрашивать у платёжного сервиса
+состояние операции.} \\
+8.C.4 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+При получении подтверждения успешной оплаты от платёжного сервиса
+система обновляет статус штрафа на «оплачен».} \\
+8.C.5 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Система формирует и направляет пользователю уведомление об успешной
+оплате штрафа.} \\
+8.C.6 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+При получении информации об отказе система действует по шагам
+альтернативного сценария 2.} \\
+8.C.7 &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Альтернативный сценарий завершается без возврата к основному
+сценарию.} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Исключения (Ошибки, отсутствие данных для отображения)}} \\
+E1 & Ошибка соединения с платёжным сервисом. & Система уведомляет о
+невозможности проведения операции. \\
+E2 & Сбой записи данных о транзакции. & Система не меняет статус штрафа
+и логирует ошибку. \\
+\textbf{Постусловия} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7929} + 2\tabcolsep}@{}}{%
+Штраф оплачен и удалён из списка активных.} \\
+\bottomrule()
+\end{longtable}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  \textbf{Функциональные требования}
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    Регистрация / Авторизация пользователя
+  \end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Система должна проверять корректность введённых пользователем данных
+  регистрации (e-mail, пароль, подтверждение пароля, ФИО).
+\item
+  Система должна проверять уникальность указанного пользователем e-mail
+  при регистрации.
+\item
+  Система должна создавать учётную запись пользователя при успешной
+  проверке регистрационных данных.
+\item
+  Система должна отправлять пользователю письмо с подтверждением
+  регистрации на указанный e-mail.
+\item
+  Система должна активировать учётную запись пользователя при переходе
+  по ссылке из письма подтверждения.
+\item
+  Система должна отказывать в регистрации, если указанный пользователем
+  e-mail уже используется другой учётной записью.
+\item
+  Система должна отображать пользователю сообщение о несоответствии
+  пароля и его подтверждения при их различии.
+\item
+  Система должна позволять пользователю повторно отправлять письмо
+  активации учётной записи.
+\item
+  Система должна сообщать пользователю об ошибках соединения или сбоях
+  базы данных при выполнении операций регистрации и авторизации.
+\item
+  Система должна удалять неактивированные учётные записи пользователей
+  по истечении установленного срока.
+\item
+  Система должна позволять пользователю, имеющему активную учётную
+  запись, выполнять вход в систему.
+\item
+  Система должна блокировать невалидные сессии и предотвращать доступ
+  при некорректных попытках авторизации.
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    Поиск материалов
+  \end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Система должна предоставлять пользователю средства для ввода поисковых
+  запросов по каталогу материалов.
+\item
+  Система должна искать материалы по ключевым характеристикам (например,
+  названию, автору, идентификатору, ISBN и др.).
+\item
+  Система должна отображать пользователю список найденных материалов с
+  основной информацией о каждом материале.
+\item
+  Система должна поддерживать фильтрацию результатов поиска по заданным
+  пользователем параметрам (жанру, году издания, типу материала, наличию
+  и т. п.).
+\item
+  Система должна поддерживать сортировку результатов поиска (например,
+  по алфавиту, дате издания, дате добавления).
+\item
+  Система должна сообщать пользователю о том, что по заданным критериям
+  не найдено ни одного материала.
+\item
+  Система должна отображать пользователю список популярных или
+  рекомендованных материалов при отсутствии введённого поискового
+  запроса.
+\item
+  Система должна отображать пользователю сообщение о некорректной
+  комбинации фильтров, если заданные параметры отбора не дают
+  результатов.
+\item
+  Система должна обеспечивать корректную работу поиска по каталогу при
+  высокой нагрузке и большом объёме данных.
+\item
+  Система должна сообщать пользователю о временной недоступности поиска
+  при сбое соединения или внутренних ошибках.
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    Оформление брони
+  \end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Система должна позволять авторизованному пользователю инициировать
+  бронирование выбранного материала из каталога.
+\item
+  Система должна проверять доступность экземпляров материала для
+  бронирования перед созданием записи брони.
+\item
+  Система должна создавать запись бронирования материала за
+  пользователем при успешной проверке условий.
+\item
+  Система должна уведомлять библиотекаря о созданной пользователем
+  брони.
+\item
+  Система должна уведомлять пользователя об успешном создании
+  бронирования материала.
+\item
+  Система должна предлагать пользователю включиться в очередь ожидания,
+  если все экземпляры выбранного материала уже забронированы.
+\item
+  Система должна отказывать пользователю в создании новой брони, если
+  превышен установленный лимит активных бронирований.
+\item
+  Система должна позволять пользователю отменять созданную бронь до её
+  подтверждения или обработки библиотекарем.
+\item
+  Система должна сохранять все операции, связанные с бронированием
+  материалов, в журнале действий.
+\item
+  Система должна обрабатывать ошибки записи в базу данных при создании
+  или отмене брони и уведомлять пользователя о невозможности выполнения
+  операции.
+\item
+  Система должна предотвращать дублирование активных броней одного и
+  того же материала для одного пользователя.
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    Оформление выдачи материала
+  \end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Система должна позволять библиотекарю находить пользователя по
+  идентификатору, имени или иному уникальному атрибуту при оформлении
+  выдачи.
+\item
+  Система должна проверять отсутствие у пользователя активных
+  блокирующих штрафов или критических просрочек перед выдачей материала.
+\item
+  Система должна проверять доступность выбранного экземпляра материала
+  для выдачи пользователю.
+\item
+  Система должна фиксировать факт выдачи материала пользователю с
+  указанием даты выдачи, срока возврата и места (филиала) выдачи.
+\item
+  Система должна уведомлять пользователя о выданных материалах и
+  установленных сроках возврата.
+\item
+  Система должна блокировать выдачу новых материалов пользователю при
+  наличии у него просроченных материалов.
+\item
+  Система должна предотвращать выдачу материала пользователю, если
+  данный экземпляр зарезервирован другим пользователем.
+\item
+  Система должна позволять библиотекарю изменять срок возврата материала
+  в соответствии с внутренними правилами библиотеки.
+\item
+  Система должна обрабатывать ошибки записи данных о выдаче в базе
+  данных и уведомлять библиотекаря о невозможности завершения операции.
+\item
+  Система должна обеспечивать синхронизацию данных о выдаче материалов
+  между филиалами библиотеки при распределённом хранении данных.
+\item
+  Система должна хранить журнал всех выданных экземпляров с указанием
+  дат выдачи, возврата и идентификаторов пользователей и материалов.
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    Возврат материала
+  \end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Система должна позволять библиотекарю находить запись выдачи по
+  пользователю, материалу или идентификатору экземпляра при возврате.
+\item
+  Система должна фиксировать факт возврата материала в учётной записи
+  выдачи.
+\item
+  Система должна проверять фактическую дату возврата материала и
+  сравнивать её с установленным сроком возврата.
+\item
+  Система должна начислять пользователю штраф при обнаружении просрочки
+  возврата в соответствии с действующими тарифами.
+\item
+  Система должна позволять библиотекарю вручную отменять начисленный
+  штраф при малой просрочке в рамках установленных правил.
+\item
+  Система должна изменять статус возвращённого материала на «доступен»
+  после успешной регистрации возврата.
+\item
+  Система должна отправлять пользователю уведомление о принятом возврате
+  материала.
+\item
+  Система должна уведомлять пользователя о начисленном штрафе при
+  наличии просрочки возврата.
+\item
+  Система должна позволять библиотекарю фиксировать факт повреждения
+  материала при его возврате.
+\item
+  Система должна создавать запись (акт) о повреждении материала с
+  указанием состояния экземпляра и необходимых деталей.
+\item
+  Система должна обрабатывать ошибки при обновлении статуса материала и
+  начислении штрафа, не допуская неконсистентного состояния данных.
+\item
+  Система должна обрабатывать случаи отсутствия данных о тарифах при
+  расчёте штрафа и уведомлять об этом библиотекаря или администратора.
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    Погашение штрафа
+  \end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Система должна предоставлять пользователю доступ к актуальному списку
+  его активных штрафов.
+\item
+  Система должна позволять пользователю выбирать штраф из списка и
+  инициировать его оплату.
+\item
+  Система должна перенаправлять пользователя для оплаты штрафа в
+  защищённый платёжный сервис.
+\item
+  Система должна получать от платёжного сервиса статус выполненной
+  транзакции (успех, отказ, отмена, ожидание подтверждения).
+\item
+  Система должна обновлять статус штрафа на «оплачен» при получении
+  успешного подтверждения оплаты от платёжного сервиса.
+\item
+  Система должна отображать пользователю сообщение об успешной оплате
+  штрафа после изменения его статуса.
+\item
+  Система должна не изменять статус штрафа при отмене пользователем
+  операции оплаты или при отказе в проведении платежа.
+\item
+  Система должна повторно запрашивать статус операции оплаты у
+  платёжного сервиса при задержке подтверждения результата.
+\item
+  Система должна обрабатывать ошибки соединения с платёжным сервисом и
+  информировать пользователя о невозможности завершения операции оплаты.
+\item
+  Система должна обрабатывать ошибки записи данных о транзакции оплаты в
+  базу данных и обеспечивать целостность статусов штрафов.
+\item
+  Система должна обеспечивать журналирование всех операций, связанных с
+  оплатой штрафов, для последующего аудита.
+\item
+  Система должна защищать передаваемые платёжные данные пользователя от
+  несанкционированного доступа и утечек.
+\end{enumerate}
+
+\end{document}
