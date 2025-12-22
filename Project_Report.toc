@@ -13,14 +13,15 @@
 \contentsline {subsection}{\numberline {3.4}Итерация 4: Диаграммы архитектуры, классов и последовательностей}{21}{subsection.0.3.4}%
 \contentsline {subsubsection}{Диаграмма контекста (C1)}{21}{section*.7}%
 \contentsline {subsubsection}{Диаграмма контейнеров (C2)}{22}{section*.8}%
-\contentsline {subsubsection}{Диаграмма компонентов (C3)}{22}{section*.9}%
-\contentsline {subsubsection}{Диаграмма классов (C4)}{23}{section*.10}%
-\contentsline {subsubsection}{Диаграмма последовательностей}{23}{section*.11}%
-\contentsline {section}{\numberline {4}Нефункциональные требования}{25}{section.0.4}%
-\contentsline {subsection}{\numberline {4.1}Производительность}{25}{subsection.0.4.1}%
-\contentsline {subsection}{\numberline {4.2}Надёжность и доступность}{25}{subsection.0.4.2}%
-\contentsline {subsection}{\numberline {4.3}Безопасность}{25}{subsection.0.4.3}%
-\contentsline {subsection}{\numberline {4.4}Удобство использования (Usability)}{26}{subsection.0.4.4}%
-\contentsline {subsection}{\numberline {4.5}Масштабируемость}{26}{subsection.0.4.5}%
-\contentsline {subsection}{\numberline {4.6}Поддерживаемость}{27}{subsection.0.4.6}%
-\contentsline {section}{\numberline {5}Заключение}{28}{section.0.5}%
+\contentsline {paragraph}{Клиентские приложения}{22}{section*.9}%
+\contentsline {subsubsection}{Диаграмма компонентов (C3)}{24}{section*.10}%
+\contentsline {subsubsection}{Диаграмма классов (C4)}{24}{section*.11}%
+\contentsline {subsubsection}{Диаграмма последовательностей}{25}{section*.12}%
+\contentsline {section}{\numberline {4}Нефункциональные требования}{27}{section.0.4}%
+\contentsline {subsection}{\numberline {4.1}Производительность}{27}{subsection.0.4.1}%
+\contentsline {subsection}{\numberline {4.2}Надёжность и доступность}{27}{subsection.0.4.2}%
+\contentsline {subsection}{\numberline {4.3}Безопасность}{27}{subsection.0.4.3}%
+\contentsline {subsection}{\numberline {4.4}Удобство использования (Usability)}{28}{subsection.0.4.4}%
+\contentsline {subsection}{\numberline {4.5}Масштабируемость}{28}{subsection.0.4.5}%
+\contentsline {subsection}{\numberline {4.6}Поддерживаемость}{29}{subsection.0.4.6}%
+\contentsline {section}{\numberline {5}Заключение}{30}{section.0.5}%
