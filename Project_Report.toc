@@ -9,17 +9,18 @@
 \contentsline {subsection}{\numberline {3.3}Итерация 3: Use Case Diagram и детализация прецедентов}{7}{subsection.0.3.3}%
 \contentsline {subsubsection}{Прецедент 5: Возврат материала}{14}{section*.4}%
 \contentsline {subsubsection}{Прецедент 6: Погашение штрафа}{15}{section*.5}%
-\contentsline {subsection}{\numberline {3.4}Итерация 4: Диаграммы архитектуры, классов и последовательностей}{17}{subsection.0.3.4}%
-\contentsline {subsubsection}{Диаграмма контекста (C1)}{17}{section*.6}%
-\contentsline {subsubsection}{Диаграмма контейнеров (C2)}{18}{section*.7}%
-\contentsline {subsubsection}{Диаграмма компонентов (C3)}{19}{section*.8}%
-\contentsline {subsubsection}{Диаграмма классов (C4)}{19}{section*.9}%
-\contentsline {subsubsection}{Диаграмма последовательностей}{20}{section*.10}%
-\contentsline {section}{\numberline {4}Нефункциональные требования}{22}{section.0.4}%
-\contentsline {subsection}{\numberline {4.1}Производительность}{22}{subsection.0.4.1}%
-\contentsline {subsection}{\numberline {4.2}Надёжность и доступность}{22}{subsection.0.4.2}%
-\contentsline {subsection}{\numberline {4.3}Безопасность}{22}{subsection.0.4.3}%
-\contentsline {subsection}{\numberline {4.4}Удобство использования (Usability)}{23}{subsection.0.4.4}%
-\contentsline {subsection}{\numberline {4.5}Масштабируемость}{23}{subsection.0.4.5}%
-\contentsline {subsection}{\numberline {4.6}Поддерживаемость}{24}{subsection.0.4.6}%
-\contentsline {section}{\numberline {5}Заключение}{25}{section.0.5}%
+\contentsline {subsubsection}{Функциональные требования}{17}{section*.6}%
+\contentsline {subsection}{\numberline {3.4}Итерация 4: Диаграммы архитектуры, классов и последовательностей}{21}{subsection.0.3.4}%
+\contentsline {subsubsection}{Диаграмма контекста (C1)}{21}{section*.7}%
+\contentsline {subsubsection}{Диаграмма контейнеров (C2)}{22}{section*.8}%
+\contentsline {subsubsection}{Диаграмма компонентов (C3)}{22}{section*.9}%
+\contentsline {subsubsection}{Диаграмма классов (C4)}{23}{section*.10}%
+\contentsline {subsubsection}{Диаграмма последовательностей}{23}{section*.11}%
+\contentsline {section}{\numberline {4}Нефункциональные требования}{25}{section.0.4}%
+\contentsline {subsection}{\numberline {4.1}Производительность}{25}{subsection.0.4.1}%
+\contentsline {subsection}{\numberline {4.2}Надёжность и доступность}{25}{subsection.0.4.2}%
+\contentsline {subsection}{\numberline {4.3}Безопасность}{25}{subsection.0.4.3}%
+\contentsline {subsection}{\numberline {4.4}Удобство использования (Usability)}{26}{subsection.0.4.4}%
+\contentsline {subsection}{\numberline {4.5}Масштабируемость}{26}{subsection.0.4.5}%
+\contentsline {subsection}{\numberline {4.6}Поддерживаемость}{27}{subsection.0.4.6}%
+\contentsline {section}{\numberline {5}Заключение}{28}{section.0.5}%

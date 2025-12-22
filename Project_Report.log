@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.12.11)  20 DEC 2025 20:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.12.11)  22 DEC 2025 18:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -989,54 +989,71 @@ Overfull \hbox (23.99998pt too wide) in alignment at lines 970--1106
  []
 
 [15] [16]
-<Lab4_sa_sd/C1-diagram.png, id=211, 644.4075pt x 887.315pt>
-File: Lab4_sa_sd/C1-diagram.png Graphic file (type png)
-<use Lab4_sa_sd/C1-diagram.png>
-Package pdftex.def Info: Lab4_sa_sd/C1-diagram.png  used on input line 1116.
-(pdftex.def)             Requested size: 313.95091pt x 432.31046pt.
-
 
 [17]
-<Lab4_sa_sd/C2-diagram.png, id=217, 1797.71625pt x 941.5175pt>
+Overfull \hbox (7.41083pt too wide) in paragraph at lines 1138--1139
+[]\T2A/cmr/m/n/12 Система долж-на отоб-ра-жать поль-зо-ва-те-лю со-об-ще-ние о 
+некор-рект-ной ком-би-на-ции филь-
+ []
+
+
+Overfull \hbox (5.28975pt too wide) in paragraph at lines 1147--1148
+[]\T2A/cmr/m/n/12 Система долж-на со-зда-вать за-пись бро-ни-ро-ва-ния ма-те-ри
+-а-ла за поль-зо-ва-те-лем при успеш-
+ []
+
+
+
+[18]
+
+[19]
+
+[20]
+<Lab4_sa_sd/C1-diagram.png, id=301, 644.4075pt x 887.315pt>
+File: Lab4_sa_sd/C1-diagram.png Graphic file (type png)
+<use Lab4_sa_sd/C1-diagram.png>
+Package pdftex.def Info: Lab4_sa_sd/C1-diagram.png  used on input line 1214.
+(pdftex.def)             Requested size: 313.95091pt x 432.31046pt.
+<Lab4_sa_sd/C2-diagram.png, id=302, 1797.71625pt x 941.5175pt>
 File: Lab4_sa_sd/C2-diagram.png Graphic file (type png)
 <use Lab4_sa_sd/C2-diagram.png>
-Package pdftex.def Info: Lab4_sa_sd/C2-diagram.png  used on input line 1127.
+Package pdftex.def Info: Lab4_sa_sd/C2-diagram.png  used on input line 1225.
 (pdftex.def)             Requested size: 523.24622pt x 274.03873pt.
 
 
-[18 <./Lab4_sa_sd/C1-diagram.png>]
-<Lab4_sa_sd/C3-diagram.png, id=226, 2061.7025pt x 670.505pt>
+[21 <./Lab4_sa_sd/C1-diagram.png>]
+<Lab4_sa_sd/C3-diagram.png, id=313, 2061.7025pt x 670.505pt>
 File: Lab4_sa_sd/C3-diagram.png Graphic file (type png)
 <use Lab4_sa_sd/C3-diagram.png>
-Package pdftex.def Info: Lab4_sa_sd/C3-diagram.png  used on input line 1138.
+Package pdftex.def Info: Lab4_sa_sd/C3-diagram.png  used on input line 1236.
 (pdftex.def)             Requested size: 523.24622pt x 170.16315pt.
-<Lab4_sa_sd/C4-diagram.png, id=227, 1565.85pt x 1473.505pt>
+<Lab4_sa_sd/C4-diagram.png, id=314, 1565.85pt x 1473.505pt>
 File: Lab4_sa_sd/C4-diagram.png Graphic file (type png)
 <use Lab4_sa_sd/C4-diagram.png>
-Package pdftex.def Info: Lab4_sa_sd/C4-diagram.png  used on input line 1149.
+Package pdftex.def Info: Lab4_sa_sd/C4-diagram.png  used on input line 1247.
 (pdftex.def)             Requested size: 523.24622pt x 492.39626pt.
 
 
-[19 <./Lab4_sa_sd/C2-diagram.png> <./Lab4_sa_sd/C3-diagram.png>]
-<Lab4_sa_sd/Sequence Diagram.png, id=238, 1334.9875pt x 1832.8475pt>
+[22 <./Lab4_sa_sd/C2-diagram.png> <./Lab4_sa_sd/C3-diagram.png>]
+<Lab4_sa_sd/Sequence Diagram.png, id=325, 1334.9875pt x 1832.8475pt>
 File: Lab4_sa_sd/Sequence Diagram.png Graphic file (type png)
 <use Lab4_sa_sd/Sequence Diagram.png>
-Package pdftex.def Info: Lab4_sa_sd/Sequence Diagram.png  used on input line 11
-60.
+Package pdftex.def Info: Lab4_sa_sd/Sequence Diagram.png  used on input line 12
+58.
 (pdftex.def)             Requested size: 366.27075pt x 502.84604pt.
 
 
-[20 <./Lab4_sa_sd/C4-diagram.png>]
+[23 <./Lab4_sa_sd/C4-diagram.png>]
 
-[21 <./Lab4_sa_sd/Sequence Diagram.png>]
+[24 <./Lab4_sa_sd/Sequence Diagram.png>]
 
-[22]
+[25]
 
-[23]
+[26]
 
-[24]
+[27]
 
-[25] (./Project_Report.aux)
+[28] (./Project_Report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1049,13 +1066,13 @@ Package rerunfilecheck Info: File `Project_Report.out' has not changed.
 (rerunfilecheck)             Checksum: C9E3ED9F1F1C01B040A6FC8CB7E55517;4143.
  ) 
 Here is how much of TeX's memory you used:
- 15947 strings out of 474142
- 245610 string characters out of 5742215
+ 16025 strings out of 474142
+ 246188 string characters out of 5742215
  858458 words of memory out of 5000000
  38596 multiletter control sequences out of 15000+600000
  575902 words of font info for 76 fonts, out of 8000000 for 9000
  735 hyphenation exceptions out of 8191
- 75i,10n,79p,815b,595s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,10n,79p,815b,719s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/admin/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/lh/lh-t2a/
 labx1440.600pk> </Users/admin/Library/texlive/2025basic/texmf-var/fonts/pk/ljfo
 ur/lh/lh-t2a/latt1200.600pk> </Users/admin/Library/texlive/2025basic/texmf-var/
@@ -1067,10 +1084,10 @@ pk> </Users/admin/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/lh/lh-t2a
 /lati1440.600pk> </Users/admin/Library/texlive/2025basic/texmf-var/fonts/pk/ljf
 our/lh/lh-t2a/labx2488.600pk> </Users/admin/Library/texlive/2025basic/texmf-var
 /fonts/pk/ljfour/lh/lh-t2a/larm1440.600pk>
-Output written on Project_Report.pdf (26 pages, 1184362 bytes).
+Output written on Project_Report.pdf (29 pages, 1195386 bytes).
 PDF statistics:
- 727 PDF objects out of 1000 (max. 8388607)
- 306 compressed objects within 4 object streams
- 120 named destinations out of 1000 (max. 500000)
+ 834 PDF objects out of 1000 (max. 8388607)
+ 405 compressed objects within 5 object streams
+ 198 named destinations out of 1000 (max. 500000)
  190 words of extra memory for PDF output out of 10000 (max. 10000000)
 
